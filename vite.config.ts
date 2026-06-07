@@ -4,5 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/special-resume/",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
 });

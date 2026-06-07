@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+body {
+  background-color: #faf8f6;
+  color: #111827;
+}
+/* Ant Design Splitter 滚动容器 */
+.ant-splitter-panel::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Chrome / Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Firefox */
+.scrollbar-hide {
+  scrollbar-width: none !important;
+}
+
+/* IE */
+.scrollbar-hide {
+  -ms-overflow-style: none !important;
+}
+
+/* .scrollbar-hide {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+} */
+
+/* .scrollbar-hide::-webkit-scrollbar {
+  display: none !important;
+} */
+
+/* 富文本 */
+.ProseMirror {
+  outline: none !important;
+  border: none !important;
+
+  min-height: 180px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: block;
+  font-size: 14px;
+  line-height: 1.6;
+
+  box-sizing: border-box;
+}
+
+/* 段落 */
+.ProseMirror p {
+  margin: 0;
+}
+
+/* placeholder */
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: #cbd5e1;
+  float: left;
+  pointer-events: none;
+  height: 0;
+}
+
+.ProseMirror ul,
+.prose ul {
+  list-style: disc !important;
+  padding-left: 1.5rem !important;
+}
+
+.ProseMirror ol,
+.prose ol {
+  list-style: decimal !important;
+  padding-left: 1.5rem !important;
+}
+
+.ProseMirror li,
+.prose li {
+  display: list-item !important;
+}
+
+.ProseMirror ul li::marker,
+.prose ul li::marker {
+  color: #111827;
+}
+
+.ProseMirror ol li::marker,
+.prose ol li::marker {
+  color: #111827;
+}
+/* 简历预览富文本 */
+
+.resume-content ul {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+}
+
+.resume-content ol {
+  list-style-type: decimal !important;
+  padding-left: 1.5rem !important;
+}
+
+.resume-content li {
+  display: list-item !important;
+}
+
+.resume-content p {
+  margin: 0;
+}

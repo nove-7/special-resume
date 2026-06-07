@@ -16,10 +16,13 @@
     "jsx": "react-jsx",
 
     /* 路径别名 */
+    // "ignoreDeprecations": "5.0",
     // "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
+    "strict": false,
+    "noImplicitAny": false,
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,

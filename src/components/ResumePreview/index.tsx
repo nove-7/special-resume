@@ -75,23 +75,23 @@ export default function ResumePreview({ resumeRef }) {
 }
 
 // 红色虚线
-const A4_HEIGHT = 1123; // px（A4 @96dpi）
+// const A4_HEIGHT = 1123; // px（A4 @96dpi）
 
-function A4Guides() {
-  return (
-    <div className="absolute inset-0 pointer-events-none">
-      {Array.from({ length: 20 }).map((_, i) => (
-        <div
-          key={i}
-          style={{
-            position: "absolute",
-            top: `${i * A4_HEIGHT}px`,
-            left: 0,
-            right: 0,
-          }}
-          className="border-t border-dashed border-red-500 opacity-50"
-        />
-      ))}
-    </div>
-  );
-}
+// function A4Guides() {
+//   return (
+//     <div className="absolute inset-0 pointer-events-none">
+//       {Array.from({ length: 20 }).map((_, i) => (
+//         <div
+//           key={i}
+//           style={{
+//             position: "absolute",
+//             top: `${i * A4_HEIGHT}px`,
+//             left: 0,
+//             right: 0,
+//           }}
+//           className="border-t border-dashed border-red-500 opacity-50"
+//         />
+//       ))}
+//     </div>
+//   );
+// }

@@ -2,8 +2,6 @@ import { Input } from "antd";
 import { useState } from "react";
 import {
   HolderOutlined,
-  EyeOutlined,
-  EyeInvisibleOutlined,
   DeleteOutlined,
   UpOutlined,
   DownOutlined,

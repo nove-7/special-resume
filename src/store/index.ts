@@ -5,10 +5,10 @@ import { devtools } from "zustand/middleware";
 // const useStore = create((set, get, api) => ({
 //   ...createResumeSlice(set, get, api),
 // }));
-const useStore = create(
+const useStore = create<any>()(
   devtools(
-    (set, get, api) => ({
-      ...createResumeSlice(set, get, api),
+    (set) => ({
+      ...createResumeSlice(set),
     }),
     {
       enabled: true,
